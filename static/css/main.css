@@ -1,0 +1,123 @@
+			body{background-image:url(../img/bgr.jpg)} //给body加背景
+			
+			h1{
+				text-align: center;
+				color: #eee;
+			}
+			.dashang{
+				position: fixed; left:0;bottom:0;
+			}
+			.tu{                 //这里给Div一个宽度高度，并且用margin auto设置了左右居中，position:relative是相对定位
+				width: 960px;
+				height: 450px;
+				margin: 60px auto;
+				position:relative;
+			}
+			img{                //这里给img标签设置鼠标未移动之前的默认属性
+				padding: 10px 10px 15px; //设置padding内边距
+				background: #fff;        //设置背景颜色，与上面padding结合出来相框的效果
+				border:1px solid #ddd;   //给一个边框，设置边框大小跟颜色
+				position: absolute;      //设置绝对定位
+				-webkit-transition:1s;   //设置动画为一秒
+				-moz-transition:1s;
+				transition:1s;
+				z-index:1;               //这里为了与后面的z-index:2 对应
+				/*
+					webkit是谷歌浏览器跟苹果浏览器前缀
+					moz是火狐浏览器前缀，这么写是为了照顾兼容问题
+					transform：rotate是旋转角度
+					transition：是动画时间
+					box-shadow：是阴影 第一个参数是横向，左为负数，右为正。第二个参数是垂直
+					上边为负数，下边为正.第三个参数是距离 第四个参数是颜色
+					transform：scale()是放大的倍数
+				*/
+				
+			}
+			img:hover{      //这里设置img标签鼠标移动之后的属性
+				-webkit-transform:rotate(0deg);//旋转回来，角度变回0
+				-moz-transform:rotate(0deg);
+				transform:rotate(0deg);
+				-webkit-transform:scale(1.5);//放大1.5倍
+				-moz-transform:scale(1.5);
+				transform:scale(1.5);
+				box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); //阴影大小，颜色
+				z-index:2;   //与之前z-index:1对应，2比之前的1大，所以鼠标移动至此，这张图片会置顶到最上面
+			}
+			.gray { 
+			    -webkit-filter: grayscale(100%);
+			    -moz-filter: grayscale(100%);
+			    -ms-filter: grayscale(100%);
+			    -o-filter: grayscale(100%);
+			    filter: grayscale(100%);
+			    filter: gray;
+			}
+			.pic1{ //这里给每一个图片单独设置属性
+				top: 30px; //定位
+				left: 650px;
+				-webkit-transform:rotate(25deg);//默认的旋转角度，当鼠标移动至此时，会恢复上面设置的0；达到旋转动画的效果，以下都是
+				-moz-transform:rotate(25deg);
+				transform:rotate(25deg);
+			}
+			.pic2{
+				top: 380px;
+				left: 680px;
+				-webkit-transform:rotate(20deg);
+				-moz-transform:rotate(20deg);
+				transform:rotate(20deg);
+			}
+			.pic3{
+				top: 420px;
+				left: 480px;
+				-webkit-transform:rotate(40deg);
+				-moz-transform:rotate(40deg);
+				transform:rotate(40deg);
+			}
+			.pic4{
+				top: 390px;
+				left: 260px;
+				-webkit-transform:rotate(-20deg);
+				-moz-transform:rotate(-20deg);
+				transform:rotate(-20deg);
+			}
+			.pic5{
+				top: 0px;
+				left: 30px;
+				-webkit-transform:rotate(-35deg);
+				-moz-transform:rotate(-35deg);
+				transform:rotate(-35deg);
+			}
+			.pic6{
+				top: 0px;
+				left: 430px;
+				-webkit-transform:rotate(-45deg);
+				-moz-transform:rotate(-45deg);
+				transform:rotate(-45deg);
+			}
+			.pic7{
+				top: 400px;
+				left: 90px;
+				-webkit-transform:rotate(15deg);
+				-moz-transform:rotate(15deg);
+				transform:rotate(15deg);
+			}
+			.pic8{
+				top: 100px;
+				left: -190px;
+				-webkit-transform:rotate(15deg);
+				-moz-transform:rotate(15deg);
+				transform:rotate(15deg);
+			}
+			.pic9{
+				top: 30px;
+				left: 240px;
+				-webkit-transform:rotate(20deg);
+				-moz-transform:rotate(20deg);
+				transform:rotate(20deg);
+			}
+			.pic10{
+				top: 340px;
+				left: -120px;
+				-webkit-transform:rotate(-15deg);
+				-moz-transform:rotate(-15deg);
+				transform:rotate(-15deg);
+			}

@@ -1,0 +1,27 @@
+		.body{
+				 background-color: #FFFFBB;
+			 }
+		.table{
+			text-indent: 50px;
+			border-bottom: 1px solid #eee;
+		}
+		.td_con{
+			color: #888888;
+		}
+			
+		.step {
+			  font-size: 50px;
+			  color: #ff3232;
+			  font-style: italic;
+			  font-family: arial;
+			}
+		.cpc_h2 {
+			  font-size: 24px;
+			  color: #333;
+			  height: 66px;
+			  line-height: 66px;
+			  border-bottom: 1px solid #eee;
+			  text-indent: 24px;
+			  font-family: Microsoft Yahei;
+			  display: block;
+			}
